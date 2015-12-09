@@ -93,6 +93,10 @@ features and to make it better.
  $ cmake ..
  $ make -j4
  $ sudo make install
+ 
+ Please Note, Pangolin will not compile  "Pangolin/src/display/device/display_glut.cpp" by default, which is need by SceneLib2.
+ So while cmake Pangolin, manually setting "BUILD_PANGOLIN_GUI", "FORCE_GLUT", "FREEGLUT_FOUND", "GLUT_FOUND" as ture, so that 
+ display_glut.cpp can be compiled and added into Pangolin library.
 
 6. Install SceneLib2
  $ cd MY_WORK_DIRECTORY
