@@ -43,6 +43,7 @@ ADD_LIBRARY(${LIBRARY_NAME} SHARED ${SOURCES})
 
 IF(CMAKE_COMPILER_IS_GNUCXX)
   SET(CMAKE_CXX_FLAGS "-Wall -Wno-error=deprecated-declarations")
+  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 ENDIF()
 
 ############################################################
